@@ -2,6 +2,12 @@
 
 :root {
     font-size: 62.5%;
+
+    --color-white: hsl(0, 0%, 100%);
+    --color-darkblue: hsl(195, 91%, 25%);
+    --color-whiteback: hsl(196, 100%, 98%);
+    --color-lightblack: hsl(240, 5%, 7%);
+    --color-dark500: hsl(240, 6%, 13%);
 }
 
 * {
@@ -18,29 +24,32 @@ body {
     width: 100%;
     display: grid;
     grid-template-areas: 
-    "header header header"
-    "main main sidebar"
-    "footer footer footer";
+    "header"
+    "main"
+    "sidebar"
+    "footer";
 
-    grid-template-rows: 8rem 80vh 8rem;
-}
-
-.app > * {
-      border: 1px solid red;
+    grid-template-rows: 8rem 80vh 80vh 8rem;
 }
 
 header {
+    color: var(--color-white);
+    background-color: var(--color-darkblue);
     grid-area: header;
 }
 
+main, .sidebar {
+    background-color: var(--color-whiteback);
+}
 main {
     grid-area: main;
 }
 
-sidebar {
+.sidebar {
     grid-area: sidebar;
 }
 
 footer {
     grid-area: footer;
+    background-color: var(--color-darkblue);
 }
