@@ -34,10 +34,9 @@ body {
 
 header {    
     display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 2.5rem;
 
     color: var(--color-white);
     background-color: var(--color-darkblue);
@@ -46,20 +45,20 @@ header {
     grid-area: header;
 }
 
-.logo {
+div.logo {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     background-color: white;
-    width: 6rem;
-    height: 6rem;
+    min-width: 55px;
+    min-height: 55px;
     border-radius: 50%;
 
     grid-area: logo;
 }
 
 .logo img {
-    width: 4rem;
+    width: 32px;
 }
 
 input#searchbar {
@@ -69,12 +68,17 @@ input#searchbar {
     color: var(--color-white);
 
     width: 100%;
-    
-    background-color: var(--color-white);
-    opacity: .7;
-    padding: 1.6rem;
+
+    background-color: rgba(255, 255, 255, 0.20);
+
+    padding: 1.2rem;
     border-radius: .6rem;
     border: none;
+}
+
+input::placeholder {
+    opacity: .6;
+    color: var(--color-white);
 }
 
 form label {
@@ -85,8 +89,8 @@ form label {
 }
 
 img#photo {
-    width: 6rem;
-    height: 6rem;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
 }
 
