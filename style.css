@@ -109,6 +109,9 @@ main, section.sidebar {
 
 img#banner {
     width: 100%;
+    max-width: 600px;
+
+    height: 220px;
     object-fit: cover;
     overflow: hidden;
     text-align: center;
