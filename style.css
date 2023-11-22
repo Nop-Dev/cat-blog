@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
 
+/* USER AGENT */
 :root {
     font-size: 62.5%;
 
@@ -16,6 +17,7 @@
     box-sizing: border-box;
 }
 
+/* APP */
 body {
     font-size: 1.6rem;
     background-color: var(--color-whiteback);
@@ -153,6 +155,7 @@ img#banner {
     border-radius: 50%;
 }
 
+/* SIDEBAR */
 .sidebar {
     grid-area: sidebar;
 }
@@ -179,7 +182,20 @@ img#banner {
     line-height: 2.2rem;
 }
 
+/* FOOTER */
 footer {
     grid-area: footer;
     background-color: var(--color-darkblue);
+
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    Font-family: 'Mulish', sans-serif;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-inline: auto;
 }
